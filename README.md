@@ -4,7 +4,7 @@
 
 <p>
     <!-- Criação do banco de dados 'torneio' -->
-    <code>CREATE DATABASE IF NOT EXISTS torneio;</code>
+    <code>CREATE DATABASE torneio;</code>
 </p>
 
 <p>
@@ -16,11 +16,10 @@
     <!-- Criação da tabela 'arena' -->
     <code>
         CREATE TABLE IF NOT EXISTS arena (
-            id INT NOT NULL,
-            name_arena VARCHAR(255) NOT NULL,
-            location VARCHAR(255) NOT NULL,
-            topScorer VARCHAR(255),
-            PRIMARY KEY (id)
+            id INT,
+            name_arena VARCHAR(255),
+            location VARCHAR(255),
+            topScorer VARCHAR(255)
         );
     </code>
 </p>
