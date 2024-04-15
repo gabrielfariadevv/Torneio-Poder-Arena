@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Torneio do Poder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+<h1>Cadastro de Arenas!</h1>
+
+<form action="#"
+      method="post"
+      th:action="@{/register}"
+      th:object="${arena}">
+
+    <input placeholder="Nome da Arena"
+           id="name"
+           th:field ="*{nameArena}" />
+    <br>
+    <br>
+    <input placeholder="Localização da Arena"
+           id="location"
+           th:field ="*{location}" />
+    <br>
+    <br>
+    <input placeholder="Maior vencedor da arena"
+           id="topScorer"
+           th:field ="*{topScorer}" />
+    <br>
+    <br>
+    <input type="submit" value="Salvar"/>
+
+</form>
+
+</body>
+</html>

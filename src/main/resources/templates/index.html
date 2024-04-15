@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Torneio do Poder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+<h1>Bem-vindo ao torneio do Poder!</h1>
+
+<h3>Arenas Dísponiveis:</h3>
+
+<tr th:each=" arena : ${arenas}">
+    <span th:text="${arena.nameArena}"></span>
+    <span th:text="${arena.location}"></span>
+    <span th:text="${arena.topScorer}"></span>
+    <p></p>
+</tr>
+
+</body>
+</html>
